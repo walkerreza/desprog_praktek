@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Datepicker</title>
+    <!-- Link ke CSS jQuery UI -->
+    <link rel="stylesheet" href="jquery_ui/jquery-ui-1.14.1.custom/jquery-ui.css">
+    
+    <!-- Link ke library jQuery dan jQuery UI -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery_ui/jquery-ui-1.14.1.custom/jquery-ui.js"></script>
+    
+    <script>
+        // Inisialisasi widget datepicker saat dokumen siap
+        $(function() {
+            $("#date_ex").datepicker();
+        });
+    </script>
+</head>
+<body>
+    <div>Selected Date: <input type="text" id="date_ex"></div>
+</body>
+</html> 
