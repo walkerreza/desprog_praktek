@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bootstrap - Halaman Web Statis</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-graduation-cap"></i> Muhammad Anka Reza
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+    <div class="jumbotron jumbotron-fluid text-center bg-primary text-white" id="home">
+        <div class="container">
+            <h1 class="display-3">Selamat Datang di Website Saya</h1>
+            <p class="lead">Tugas Desain dan Pemrograman Web</p>
+            <hr class="my-4">
+            <p>Dibuat oleh muhammad anka reza</p>
+            <a class="btn btn-light btn-lg" href="#about" role="button">
+                <i class="fas fa-arrow-down"></i> Pelajari Lebih Lanjut
+            </a>
+        </div>
+    </div>
+
+ 
+    <div class="container my-5" id="about">
+        <h2 class="text-center mb-5">Tentang Website Ini</h2>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-mobile-alt text-primary display-4 mb-3"></i>
+                        <h5 class="card-title">Responsive Design</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-code text-success display-4 mb-3"></i>
+                        <h5 class="card-title">Bootstrap 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <i class="fas fa-rocket text-danger display-4 mb-3"></i>
+                        <h5 class="card-title">Modern & Fast</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container my-5" id="gallery">
+        <h2 class="text-center mb-5">Galeri Politeknik Negeri Malang</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="polnemjpg.jpg" class="img-fluid rounded shadow" alt="Politeknik Negeri Malang 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="polnem2.jpg" class="img-fluid rounded shadow" alt="Politeknik Negeri Malang 2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="polnem3. jpg.jpg" class="img-fluid rounded shadow" alt="Politeknik Negeri Malang 3">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="polnemjpg.jpg" class="img-fluid rounded shadow" alt="Politeknik Negeri Malang 4">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="polnem2.jpg" class="img-fluid rounded shadow" alt="Politeknik Negeri Malang 5">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="polnem3. jpg.jpg" class="img-fluid rounded shadow" alt="Politeknik Negeri Malang 6">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <h2 class="text-center mb-5">FAQ (Accordion)</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                            Apa itu Bootstrap?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        Bootstrap adalah framework CSS yang paling populer untuk membangun website responsif dan mobile-first.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                            Mengapa menggunakan Bootstrap?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Bootstrap mempercepat proses development, menyediakan komponen siap pakai, dan memastikan konsistensi desain.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
+                            Apakah Bootstrap gratis?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Ya, Bootstrap adalah open-source dan gratis untuk digunakan dalam proyek komersial maupun personal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container my-5">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong><i class="fas fa-check-circle"></i> Sukses!</strong> Website ini berhasil dibuat menggunakan Bootstrap 4.
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>
+        </div>
+    </div>
+
+  
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Skill Progress</h2>
+        <div class="mb-3">
+            <label>HTML</label>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>CSS</label>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width: 85%">85%</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>JavaScript</label>
+            <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 75%">75%</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Bootstrap</label>
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 80%">80%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="contact">
+        <h2 class="text-center mb-5">Hubungi Kami</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nama@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Tentang</h5>
+                    <p>Website ini dibuat sebagai tugas Desain dan Pemrograman Web menggunakan Bootstrap 4.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#gallery" class="text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Sosial Media</h5>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p class="mb-0">&copy; 2025 Muhammad Anka Reza. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
